@@ -1,13 +1,16 @@
-import TestVue1 from '@/views/TestVue1.vue';
+// import TestVue1 from '@/views/TestVue1.vue';
 import {createRouter, createWebHistory}  from 'vue-router';
+import { practiceRouter } from './practiceRouter';
 
 
 const routes = [
-    {
-        path: '/test1',
-        name: 'TestVue1',
-        component: TestVue1
-    }
+    // {
+    //     path: '/test1',
+    //     name: 'TestVue1',
+    //     component: TestVue1
+    // }
+    ...practiceRouter,
+
 
 ]
 
