@@ -1,6 +1,7 @@
 // import TestVue1 from '@/views/TestVue1.vue';
 import {createRouter, createWebHistory}  from 'vue-router';
 import { practiceRouter } from './practiceRouter';
+import { membereRouter } from './memberRouter';
 
 
 const routes = [
@@ -9,7 +10,7 @@ const routes = [
     //     name: 'TestVue1',
     //     component: TestVue1
     // }
-    ...practiceRouter,
+    ...practiceRouter,...membereRouter
 
 
 ]
