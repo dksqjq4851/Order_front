@@ -18,4 +18,5 @@ export const membereRouter = [
             name: 'MemberList',
             component: MemberList
         }
+        
 ]

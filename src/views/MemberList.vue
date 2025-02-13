@@ -41,13 +41,12 @@ import axios from 'axios';
             }
         },
         async created(){
-            const token = localStorage.getItem("token");
-            const headers = {Authorization : `Bearer ${token}`}
-            const response = await axios.get(`${process.env.VUE_APP_API_BASE_URL}/member/list`, {headers});
+            try{
+                const response = await axios.get(`${process.env.VUE_APP_API_BASE_URL}/member/list`);
             this.memberList = response.data;
-
-        },
-        methods:{
+            }catch(e){
+                console.log(e);
+            }
 
         }
     }
